@@ -1,2 +1,3 @@
 # JerryC520.github.io
-Financial Statistician, Statistical Financialist, Econometrician
+Statistician + Financialist + Econometrician
+Domain of interests: mathematics U statistics U Finance U machine learning  
