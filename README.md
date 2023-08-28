@@ -2,4 +2,4 @@
 ## Statistician + Financialist + Econometrician 
 
 ## Domain of research interests: 
-Probability Theory, Statistics, Stochastic Finance, Asset Pricing, Econometrics, Machine Learning  
+Probability Theory, Mathematical Statistics, Stochastic Finance, Asset Pricing, Econometrics, Machine Learning  
