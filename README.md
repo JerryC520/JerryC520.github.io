@@ -1,4 +1,4 @@
-# JerryC520.github.io
+# Jerry C.
 ## Statistician + Financialist + Econometrician 
 
 ## Domain of research interests: 
