@@ -5,6 +5,6 @@
 stochastic finance, fintech, risk measures, empirical asset pricing.
 ### STATISTICS:
 probability theory and Stochastic processes, mathematical statistics, econometric theory, modern machine learning.
-### Specialized topics: 
+### Specialized Topics: 
 nonparametrics and semiparametrics, functional data, high-dimensional data, high-frequency and mixed frequency data
   
