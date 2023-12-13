@@ -1,5 +1,5 @@
 # Jerry C.
-## Double Ph.D. student in Finance and Statistics.
+## Dual Ph.D. student in Finance and Statistics.
 ## Research interests: 
 ### FINANCE: 
 stochastic finance, fintech, risk measures, empirical asset pricing.
