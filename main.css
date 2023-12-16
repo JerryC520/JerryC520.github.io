@@ -2276,8 +2276,8 @@ padding-right: 0;
 }
 
 ul.icons li .icon {
-/*color: inherit;*/
-  color: blue;
+color: inherit;
+ /* color: blue;*/
 }
 
 ul.icons li .icon:before {
@@ -2337,8 +2337,8 @@ top: 0;
 }
 
 ul.contact li a {
-/*color: inherit;*/
-color: blue;
+color: inherit;
+/*color: blue;*/
 }
 
 /* Pagination */
