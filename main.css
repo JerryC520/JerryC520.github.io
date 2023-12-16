@@ -118,8 +118,7 @@ transition: none !important;
 /* Type */
 
 body, input, select, textarea {
-/*color: #7f888f;*/
-  color: #0000ee;
+color: #7f888f;
 font-family: "Open Sans", sans-serif;
 font-size: 13pt;
 font-weight: 400;
@@ -2277,7 +2276,8 @@ padding-right: 0;
 }
 
 ul.icons li .icon {
-color: inherit;
+/*color: inherit;*/
+  color: blue;
 }
 
 ul.icons li .icon:before {
@@ -2313,7 +2313,8 @@ font-weight: 400;
 }
 
 ul.contact li:before {
-color: #f56a6a;
+/*color: #f56a6a; */
+  color: #0000ee;
 display: inline-block;
 font-size: 1.5em;
 height: 1.125em;
@@ -2336,7 +2337,8 @@ top: 0;
 }
 
 ul.contact li a {
-color: inherit;
+/*color: inherit;*/
+color: blue;
 }
 
 /* Pagination */
