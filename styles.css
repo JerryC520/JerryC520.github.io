@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Website Title</title>
+    <style>
+        /* Add your existing styles here */
+
+        /* Add this new style for your fixed menu */
+        .fixed-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your body content goes here -->
+</body>
+</html>
