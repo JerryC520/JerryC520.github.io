@@ -3161,7 +3161,11 @@ font-size: 1.38889em;
 padding: 2.22222em 2.22222em 2.44444em 2.22222em ;
 position: relative;
 width: 26em;
+height: 100%; /* Full height */
+overflow-y: auto; /* Enable scroll if content is too long */
+    z-index: 10;  
 }
+
 
 #sidebar > .inner > * {
 border-bottom: solid 2px rgba(210, 215, 217, 0.75);
