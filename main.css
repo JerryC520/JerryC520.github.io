@@ -2375,7 +2375,8 @@ text-align: center;
 
 ul.pagination li > .page.active {
 background-color: #f56a6a;
-color: #ffffff !important;
+/*color: #ffffff !important;*/
+ colr:#0000ee !important;
 }
 
 ul.pagination li > .page.active:hover {
