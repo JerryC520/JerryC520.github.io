@@ -118,7 +118,8 @@ transition: none !important;
 /* Type */
 
 body, input, select, textarea {
-color: #7f888f;
+/*color: #7f888f;*/
+  color: #0000ee;
 font-family: "Open Sans", sans-serif;
 font-size: 13pt;
 font-weight: 400;
