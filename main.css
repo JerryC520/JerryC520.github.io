@@ -156,15 +156,15 @@ a {
 transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 border-bottom: dotted 1px;
 /*color: #f56a6a;*/
-color: #0000ff;
+color: #0000ee;
  text-decoration: none;
 }
 
 a:hover {
 /*border-bottom-color: #f56a6a;*/
- border-bottom-color: #0000ff;
+ border-bottom-color: #0000ee;
 /*color: #f56a6a !important;*/
- color: #0000ff;
+ color: #0000ee;
 }
 
 a:hover strong {
@@ -2378,9 +2378,9 @@ text-align: center;
 
 ul.pagination li > .page.active {
 /*background-color: #f56a6a;*/
- background-color: #0000ff;
+ background-color: #0000ee;
 /*color: #ffffff !important;*/
- colr:#0000ff !important;
+ colr:#0000ee !important;
 }
 
 ul.pagination li > .page.active:hover {
@@ -3563,7 +3563,7 @@ padding: 0.625em 0;
 
 #menu ul a:hover, #menu ul span:hover {
 /*color: #f56a6a;*/
-color: #0000ff;
+color: #0000ee;
 }
 
 #menu ul a.opener, #menu ul span.opener {
@@ -3602,7 +3602,7 @@ right: 0;
 
 #menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
 /*color: #f56a6a;*/
- color: #0000ff;
+ color: #0000ee;
 }
 
 #menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
