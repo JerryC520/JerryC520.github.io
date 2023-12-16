@@ -2316,8 +2316,8 @@ font-weight: 400;
 }
 
 ul.contact li:before {
-color: #f56a6a; 
-/*  color: #0000ee; */
+/*color: #f56a6a; */
+  color: #0000ee; 
 display: inline-block;
 font-size: 1.5em;
 height: 1.125em;
