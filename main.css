@@ -2377,9 +2377,10 @@ text-align: center;
 }
 
 ul.pagination li > .page.active {
-background-color: #f56a6a;
-color: #ffffff !important;
-/* colr:#0000ee !important;*/
+/*background-color: #f56a6a;*/
+ background-color: #0000ff;
+/*color: #ffffff !important;*/
+ colr:#0000ff !important;
 }
 
 ul.pagination li > .page.active:hover {
