@@ -2067,6 +2067,9 @@ font-weight: 900;
 font-family: 'Font Awesome 5 Brands';
 }
 
+.icon.brands.fa-envelope {
+    color: #A9A9A9 !important;
+}
 /* Image */
 
 .image {
