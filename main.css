@@ -156,9 +156,6 @@ border-bottom: dotted 1px;
  text-decoration: none;
 }
 
-a:visited {
-  color: #265778;
-}
 
 a:hover {
 /*border-bottom-color: #f56a6a;*/
