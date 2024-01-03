@@ -156,8 +156,8 @@ a {
 transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 border-bottom: dotted 1px;
 /*color: #f56a6a;*/
-color: #0000ee;
-/* color: #555555;*/
+/*color: #0000ee;*/
+ color: #555555;
  text-decoration: none;
 }
 
@@ -166,8 +166,8 @@ a:hover {
 /* border-bottom-color: #0000ee;*/
  border-bottom-color: #555555;
 /*color: #f56a6a !important;*/
-/* color: #0000ee;*/
- color: #555555;
+ color: #0000ee;
+/* color: #555555;*/
 }
 
 a:hover strong {
