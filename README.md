@@ -1,6 +1,6 @@
 # Jerry C.
 ## A Ph.D. student in Finance and Statistics
-## Research interests: 
+## RESEARCH INTERESTS: 
 ### FINANCE: 
 stochastic finance, financial risk measures, empirical asset pricing.
 ### PROBABILITY & STATISTICS:
