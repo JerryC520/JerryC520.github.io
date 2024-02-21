@@ -156,6 +156,10 @@ border-bottom: dotted 1px;
  text-decoration: none;
 }
 
+a:link {
+  color: #555555;
+}
+
 a:visited {
   color: #3b8bba;
 }
