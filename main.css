@@ -3552,6 +3552,14 @@ color: inherit;
 
 /* Menu */
 
+#menu {
+  transition: all 0.3s ease;
+}
+.visible {
+  display: block;
+  opacity: 1;
+}
+
 #menu ul {
 -moz-user-select: none;
 -webkit-user-select: none;
