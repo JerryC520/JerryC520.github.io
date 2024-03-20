@@ -2,7 +2,7 @@
 ## Ph.D. student in Finance and Statistics
 ## RESEARCH INTERESTS: 
 ### FINANCE: 
-stochastic finance, financial risk measures, empirical asset pricing
+stochastic finance, financial risk measures, financial econometrics, empirical asset pricing
 ### PROBABILITY & STATISTICS:
 probability theory and stochastic processes, mathematical statistics, econometric theory, modern machine learning
 ### Specialized Topics: 
