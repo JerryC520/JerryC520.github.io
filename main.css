@@ -95,7 +95,8 @@ box-sizing: inherit;
 }
 
 body {
-background: #ffffff;
+/*background: #ffffff;*/
+background: #000000; 
 }
 
 body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
@@ -1845,7 +1846,8 @@ textarea {
 -webkit-appearance: none;
 -ms-appearance: none;
 appearance: none;
-background: #ffffff;
+/*background: #ffffff;*/
+ background: #000000;
 border-radius: 0.375em;
 border: none;
 border: solid 1px rgba(210, 215, 217, 0.75);
@@ -1892,7 +1894,8 @@ text-overflow: ellipsis;
 
 select option {
 color: #3d4449;
-background: #ffffff;
+/*background: #ffffff;*/
+background: #000000; 
 }
 
 select:focus::-ms-value {
