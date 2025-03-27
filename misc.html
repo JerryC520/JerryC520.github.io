@@ -5,15 +5,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-    <!-- 原有外部CSS/JS連結，保留不動 -->
+    <!-- 保持你的原有外部資源連結，不要動 -->
     <link rel="stylesheet" href="https://jerryc520.github.io/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="theme.css">
     <script src="theme.js" defer></script>
 
-    <!-- 1) 新增暗色樣式: body.dark { ... } -->
+    <!-- (1) 只在這裡加一小段“暗色樣式”定義，不動其他 -->
     <style>
-      /* 預設(亮色)下：漸變動畫方便切換 */
+      /* 預設亮色 */
       body {
         transition: background-color 0.3s, color 0.3s;
         background-color: #ffffff;
@@ -24,15 +24,13 @@
         background-color: #222222;
         color: #eeeeee;
       }
-      /* 若想調整連結顏色 */
       body.dark a {
-        color: #93caf5;
+        color: #93caf5; /* 連結在暗色下改亮藍 */
       }
     </style>
 </head>
 
 <body class="is-preload">
-
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -40,13 +38,15 @@
     <div id="main">
         <div class="inner">
 
-            <!-- Header -->
+            <!-- Header (保持原有排版) -->
             <header id="header">
-                <a href="https://jerryc520.github.io" class="logo" style="color: #3b8bba;">
-                    Life is a Supermartingale
+                <a href="https://jerryc520.github.io" 
+                   class="logo"
+                   style="color: #3b8bba;">
+                   Life is a Supermartingale
                 </a>
                 
-             
+               
 
                 <h2> Miscellaneous </h2>
                 <nav>
@@ -58,30 +58,39 @@
             <section id="banner">
                 <div class="content">
                     <header>               
-                        <h2>Notes (study notes/lecture notes prepared for myself)</h2>
+                        <h2> Notes (study notes/lecture notes prepared for myself) </h2>
                         <ul>
                             <li><a href="https://drive.google.com/file/d/1VoKfaOAPSdJF38AzmUdkfLncQDR1zFYs/view?usp=sharing">
-                                Harmless Domain Knowledge for Econometrics: a Quick Review (2022)</a></li>
+                                Harmless Domain Knowledge for Econometrics: a Quick Review (2022)
+                            </a></li>
                             <li><a href="https://drive.google.com/file/d/101Tvt_TKmJxzbisER8_w_MuCHcNMmnhx/view?usp=sharing">
-                                Endogeneity: a Review (2020)</a></li>
+                                Endogeneity: a Review (2020)
+                            </a></li>
                             <li><a href="https://drive.google.com/file/d/1kS-84GTpEfvzzbg0snCPrSXyT0Vj7w7x/view?usp=share_link">
-                                Note on Fourier Analysis (2019)</a></li>
+                                Note on Fourier Analysis (2019)
+                            </a></li>
                             <li><a href="link-to-your-lec-5">
-                                Basic Tools for High-dimensional Probability and Statistics (2021)</a></li>
+                                Basic Tools for High-dimensional Probability and Statistics (2021)
+                            </a></li>
                             <li><a href="link-to-your-lec-3">
-                                Introductory Stochastic Analysis (2020)</a></li>
+                                Introductory Stochastic Analysis (2020)
+                            </a></li>
                             <li><a href="link-to-your-lec-6">
-                                Essentials of Empirical Processes (2021)</a></li> 
+                                Essentials of Empirical Processes (2021)
+                            </a></li> 
                             <li><a href="link-to-your-lec-7">
-                                Note on (measure-theoretic) Probability Theory (2019)</a></li>
+                                Note on (measure-theoretic) Probability Theory (2019)
+                            </a></li>
                             <li><a href="link-to-your-lec-8">
-                                Note on Real Analysis and Functional Analysis (2019)</a></li>
+                                Note on Real Analysis and Functional Analysis (2019)
+                            </a></li>
                             <li><a href="link-to-your-lec-9">
-                                Solution manuals for Principles of Mathematical Analysis (baby Rudin) (2018)</a></li>
+                                Solution manuals for Principles of Mathematical Analysis (baby Rudin) (2018)
+                            </a></li>
                         </ul>
                     </header>
                     <header> 
-                        <h2>Others (short notes, or summary reports)</h2>
+                        <h2> Others (short notes, or summary reports) </h2>
                         <ul>
                             <li><a href="link-to-your-note-1"> Note on Self-avoiding Walks and Percolation  </a></li>
                             <li><a href="link-to-your-note-2"> Note on Branching Processes </a></li>
@@ -135,21 +144,21 @@
 </div>
 <!-- end #sidebar -->
 
-<!-- Scripts (原有) -->
+<!-- Scripts (保持原本連結不動) -->
 <script src="https://jerryc520.github.io/jquery.min.js"></script>
 <script src="https://jerryc520.github.io/browser.min.js"></script>
 <script src="https://jerryc520.github.io/breakpoints.min.js"></script>
 <script src="https://jerryc520.github.io/util.js"></script>
 <script src="https://jerryc520.github.io/main.js"></script>
 
-<!-- 3) 在此加上一段script來切換暗色 -->
+<!-- (3) 新增: localStorage & 切換暗色功能 -->
 <script>
-  // 若localStorage裡是 'dark'，載入時自動套用
+  // 若之前 user 選了 dark, 則一載入就 .dark
   if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark');
   }
 
-  // 監聽按鈕點擊切換
+  // 按鈕點擊 => toggle dark
   const toggleBtn = document.getElementById('theme-toggle');
   if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
