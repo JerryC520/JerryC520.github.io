@@ -6,37 +6,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     
-    <!-- 原本外部CSS -->
+   
     <link rel="stylesheet" href="https://jerryc520.github.io/main.css" />
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <!-- 簡易示例：定義 .dark 時的主題樣式 -->
+  
     <style>
-      /* 預設亮色主題 */
+   
       body {
         background-color: #ffffff;
         color: #000000;
         transition: background-color 0.3s, color 0.3s;
       }
-      /* 切換到暗色主題 */
+     
       body.dark {
         background-color: #222222;
         color: #eeeeee;
       }
-      /* 可以自行加強調整，如超連結、邊欄背景等 */
+    
       body.dark a {
         color: #93caf5; /* 暗色主題下的連結顏色示例 */
       }
-      /* 或針對 #sidebar, #main 做細微調色 */
-      /* ... */
-          /* 預設亮色 */
+     
   h1 {
     color: #000;
   }
 
-  /* 切換暗色時 */
+ 
   body.dark h1 {
     color: #ffffff;
   }
@@ -154,8 +152,8 @@ I am a Ph.D. student pursuing dual Ph.D. degrees in
                     <li><a href="https://jerryc520.github.io/">MAIN</a></li>
                     <li><a href="https://jerryc520.github.io/about.html">CURRICULUM VITAE</a></li>
                     <li><a href="https://jerryc520.github.io/research.html">RESEARCH</a></li>
-                    <li><a href="https://jerryc520.github.io/teaching.html">TEACH</a></li>
-                    <li><a href="https://jerryc520.github.io/misc.html"> MISCELLANEOUS</a></li>
+                    <li><a href="https://jerryc520.github.io/teaching.html">TEACHING</a></li>
+                    <li><a href="https://jerryc520.github.io/misc.html"> MISCELLANEA</a></li>
                     <li><a href="https://jerryc520.github.io/talk.html">TALK</a></li>
                 </ul>
             </nav>
@@ -180,23 +178,22 @@ I am a Ph.D. student pursuing dual Ph.D. degrees in
 
   
     <script>
-     
-      if (localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark');
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.remove('dark');
+  } else {
+    document.body.classList.add('dark');
+  }
+  const toggleBtn = document.getElementById('theme-toggle');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      if (document.body.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
       }
-
-     
-      const themeToggle = document.getElementById('theme-toggle');
-      themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark');
-        
-        
-        if (document.body.classList.contains('dark')) {
-          localStorage.setItem('theme', 'dark');
-        } else {
-          localStorage.setItem('theme', 'light');
-        }
-      });
-    </script>
+    });
+  }
+</script>
 </body>
 </html>
