@@ -114,13 +114,12 @@
 <script src="https://jerryc520.github.io/util.js"></script>
 <script src="https://jerryc520.github.io/main.js"></script>
 
-        <script>
-
-  if (localStorage.getItem('theme') === 'dark') {
+  <script>
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.remove('dark');
+  } else {
     document.body.classList.add('dark');
   }
-
- 
   const toggleBtn = document.getElementById('theme-toggle');
   if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
