@@ -3672,13 +3672,3 @@ margin-top: 0;
 padding-top: 0;
 }
 
-/* === Override sidebar size & padding === */
-#sidebar {
-  width: 18em !important; 
-}
-
-
-#sidebar > .inner {
-  width: 18em !important;  
-  padding: 1.5em !important; 
-}
