@@ -95,7 +95,7 @@ box-sizing: inherit;
 }
 
 body {
-background: #ffffff;
+background: #ffffff !important;
 /*background: #000000;*/ 
 }
 
@@ -3672,7 +3672,3 @@ margin-top: 0;
 padding-top: 0;
 }
 
-html, body, #wrapper, #main, #sidebar {
-  background: #ffffff !important;
-  color: #3d4449 !important; /* 確保文字顏色合適 */
-}
