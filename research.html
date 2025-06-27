@@ -177,14 +177,10 @@
 </script>
 
 <script>
-    document.querySelector('.abstract-btn').addEventListener('click', function() {
-        const content = document.querySelector('.abstract-content');
-        if (content.style.display === 'block') {
-            content.style.display = 'none';
-        } else {
-            content.style.display = 'block';
-        }
-    });
+document.querySelector('.abstract-toggle').addEventListener('click', function() {
+    const content = document.querySelector('.abstract-details');
+    content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+});
 </script>
     
 </body>
