@@ -3672,3 +3672,35 @@ margin-top: 0;
 padding-top: 0;
 }
 
+.abstract-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e5e7eb;
+    color: #111827;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.abstract-btn:hover {
+    background-color: #d1d5db;
+}
+
+.abstract-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9fafb;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #374151;
+}
+
+/* 使用 :target 顯示 abstract 的內容 */
+.abstract-content:target {
+    display: block;
+}
