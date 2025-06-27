@@ -3672,35 +3672,30 @@ margin-top: 0;
 padding-top: 0;
 }
 
-.abstract-btn {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-    padding: 6px 15px;
-    border: 1px solid rgba(210, 215, 217, 0.75) !important;
-    border-radius: 6px !important;
+.abstract-toggle {
+    background-color: #e3e7ed; /* 灰白背景 */
+    color: #333; /* 深灰文字 */
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
     cursor: pointer;
-    font-family: "Roboto Slab", serif !important;
-    font-weight: 600 !important;
-    font-size: 0.9em !important;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 10px;
-    box-shadow: none !important;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.85em;
     transition: background-color 0.3s ease;
 }
 
-.abstract-btn:hover {
-    background-color: #f7f7f7 !important;
+.abstract-toggle:hover {
+    background-color: #d1d6de; /* 稍深灰色背景 */
 }
 
-.abstract-content {
-    display: none;
-    padding: 12px;
-    background-color: #ffffff;
-    border: 1px solid rgba(210, 215, 217, 0.75);
-    border-radius: 4px;
+.abstract-details {
+    display: none; /* 預設隱藏 */
+    margin-top: 10px;
+    padding: 10px;
+    background-color: transparent; /* 跟隨背景色 */
+    color: inherit;
     font-family: "Open Sans", sans-serif;
     font-size: 0.9em;
-    color: #3d4449;
     line-height: 1.6;
 }
