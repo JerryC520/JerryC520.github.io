@@ -3672,31 +3672,30 @@ margin-top: 0;
 padding-top: 0;
 }
 
-/* Abstract button styling */
 .abstract-btn {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     color: #000000 !important;
-    padding: 5px 15px;
-    border: 1px solid rgba(210, 215, 217, 0.75);
-    border-radius: 4px;
+    padding: 6px 15px;
+    border: 1px solid rgba(210, 215, 217, 0.75) !important;
+    border-radius: 6px !important;
     cursor: pointer;
-    font-family: "Roboto Slab", serif;
-    font-weight: 600;
-    font-size: 0.9em;
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 600 !important;
+    font-size: 0.9em !important;
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 10px;
+    box-shadow: none !important;
     transition: background-color 0.3s ease;
 }
 
 .abstract-btn:hover {
-    background-color: #f4f4f4;
+    background-color: #f7f7f7 !important;
 }
 
-/* Abstract content styling */
 .abstract-content {
     display: none;
-    padding: 15px;
+    padding: 12px;
     background-color: #ffffff;
     border: 1px solid rgba(210, 215, 217, 0.75);
     border-radius: 4px;
