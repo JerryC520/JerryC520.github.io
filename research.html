@@ -67,8 +67,8 @@
                         <h2>Manuscript</h2>
                         <ul>
                             <li>A New Look at Equity Premium Forecasts (2025)</li>
-<button class="abstract-toggle">Abstract</button>
-<div class="abstract-details">
+<button class="abstract-btn">Abstract</button>
+<div class="abstract-content">
   <p>We propose an econometric procedure based mainly on the generalized random forests method...</p>
 </div>
                             <li>Good Beta, Bad Beta, and Beyond: A Robust Beta Decomposition (2025)</li>
@@ -177,10 +177,13 @@
 </script>
 
 <script>
-document.querySelector('.abstract-toggle').addEventListener('click', function() {
-    const content = document.querySelector('.abstract-details');
-    content.style.display = (content.style.display === 'block') ? 'none' : 'block';
-});
+  document.querySelector('.abstract-btn')
+          .addEventListener('click', function() {
+    const detail = document.querySelector('.abstract-content');
+    detail.style.display = detail.style.display === 'block'
+                           ? 'none'
+                           : 'block';
+  });
 </script>
     
 </body>
