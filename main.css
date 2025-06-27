@@ -3672,42 +3672,36 @@ margin-top: 0;
 padding-top: 0;
 }
 
-/* 強制覆蓋 Abstract 按鈕的紅框/陰影 */
 .abstract-btn {
-  /* 基本外觀 */
   display: inline-block;
-  margin: 0.5em 0;
-  padding: 0.4em 1em;
+  margin: 0.3em 0;
+  padding: 0.25em 0.9em;            /* 更小巧的 padding */
   font-family: "Open Sans", sans-serif;
-  font-size: 0.9em;
+  font-size: 1em;                   /* 按你圖片比例 */
   font-weight: 600;
-  text-transform: none;
-  white-space: nowrap;
+  background-color: #e3e7ed !important; /* 淺灰底色 */
+  color: #222 !important;           /* 深灰黑字 */
+  border: none !important;          /* 無邊框，確保沒紅色 */
+  border-radius: 6px !important;    /* 微圓角 */
+  box-shadow: none !important;
+  outline: none !important;
   cursor: pointer;
-
-  /* 核心樣式，!important 確保優先 */
-  background-color: #e3e7ed !important;   /* 淺灰底 */
-  color: #111 !important;                 /* 深灰字 */
-  border: 1px solid #c8c8c8 !important;   /* 灰色邊框 */
-  border-radius: 4px !important;          /* 圓角 */
-  box-shadow: none !important;            /* 取消任何陰影 */
-  outline: none!important;                /* 取消 focus 的外框 */
-  transition: background-color 0.2s;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  transition: background 0.2s;
 }
-
 .abstract-btn:hover {
-  background-color: #d1d4da !important;   /* 滑過微深一點 */
+  background-color: #d2d7df !important;
 }
 
-/* 摘要收合區塊本身保持透明背景 */
 .abstract-content {
   display: none;
   margin-top: 0.5em;
   padding-left: 1em;
-  background: none!important;
-  border: none!important;
+  background: none !important;
+  border: none !important;
   color: inherit;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.9em;
-  line-height: 1.6;
+  font-size: 0.98em;
+  line-height: 1.7;
 }
