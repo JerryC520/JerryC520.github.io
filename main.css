@@ -3672,31 +3672,36 @@ margin-top: 0;
 padding-top: 0;
 }
 
+/* Abstract button styling */
 .abstract-btn {
     background-color: #ffffff;
-    color: #000000;
-    padding: 5px 12px;
-    border-radius: 6px;
+    color: #000000 !important;
+    padding: 5px 15px;
+    border: 1px solid rgba(210, 215, 217, 0.75);
+    border-radius: 4px;
     cursor: pointer;
+    font-family: "Roboto Slab", serif;
     font-weight: 600;
-    font-family: sans-serif;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 0.9em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .abstract-btn:hover {
-    background-color: #f5f5f5;
+    background-color: #f4f4f4;
 }
 
+/* Abstract content styling */
 .abstract-content {
     display: none;
-    margin-top: 10px;
-    padding: 10px;
-    font-family: sans-serif;
-    font-size: 14px;
-    color: #333333;
-    background-color: #f9f9f9;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid rgba(210, 215, 217, 0.75);
     border-radius: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9em;
+    color: #3d4449;
     line-height: 1.6;
-    border: 1px solid #e2e2e2;
 }
