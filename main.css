@@ -3674,21 +3674,22 @@ padding-top: 0;
 
 .abstract-btn {
   display: inline-block;
-  margin: 0.3em 0;
-  padding: 0.25em 0.9em;            /* 更小巧的 padding */
+  margin: 0.2em 0;
+  padding: 0.18em 1em 0.15em 1em;  /* 減少上方留白和高度，左右保有適度空間 */
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;                   /* 按你圖片比例 */
+  font-size: 1em;
   font-weight: 600;
   background-color: #e3e7ed !important; /* 淺灰底色 */
-  color: #222 !important;           /* 深灰黑字 */
-  border: none !important;          /* 無邊框，確保沒紅色 */
-  border-radius: 6px !important;    /* 微圓角 */
+  color: #222 !important;               /* 深灰字 */
+  border: none !important;
+  border-radius: 10px !important;       /* 圓角更小 */
   box-shadow: none !important;
   outline: none !important;
   cursor: pointer;
   text-transform: none;
   letter-spacing: 0.01em;
-  transition: background 0.2s;
+  transition: background 0.18s;
+  min-width: 90px;                     /* 若需要最小寬度可保留，否則可刪掉 */
 }
 .abstract-btn:hover {
   background-color: #d2d7df !important;
@@ -3700,7 +3701,7 @@ padding-top: 0;
   padding-left: 1em;
   background: none !important;
   border: none !important;
-  color: inherit;
+  color: #cfd2da !important;   /* 亮灰色 */
   font-family: "Open Sans", sans-serif;
   font-size: 0.98em;
   line-height: 1.7;
