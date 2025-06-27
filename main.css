@@ -3674,10 +3674,10 @@ padding-top: 0;
 
 .abstract-btn {
   display: inline-block;
- margin: 0.12em 0;
-  padding: 0.08em 0.8em 0.08em 0.8em;  /* 減少上方留白和高度，左右保有適度空間 */
+ margin: 0.1em 0;
+  padding: 0.1em 0.8em 0.1em 0.8em;  /* 減少上方留白和高度，左右保有適度空間 */
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
   background-color: #e3e7ed !important; /* 淺灰底色 */
   color: #222 !important;               /* 深灰字 */
