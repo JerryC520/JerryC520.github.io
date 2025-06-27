@@ -3673,10 +3673,10 @@ padding-top: 0;
 }
 
 /* ---------- Abstract 按鈕樣式 ---------- */
-#abstract-btn {
+.abstract-btn {
   display: inline-block;            /* 內容寬度撐開 */
-  margin: 0.3em 0;                   /* 上下留空 */
-  padding: 0.3em 1em;                /* 上下 0.4em、左右 1em */
+  margin: 0.5em 0;                   /* 上下留空 */
+  padding: 0.4em 1em;                /* 上下 0.4em、左右 1em */
   background-color: #e3e7ed;         /* 淺灰底 */
   color: #111;                       /* 深灰文字 */
   font-family: "Open Sans", sans-serif;
@@ -3690,14 +3690,14 @@ padding-top: 0;
   white-space: nowrap;               /* 不強制換行 */
 }
 
-#abstract-btn:hover {
+.abstract-btn:hover {
   background-color: #d1d4da;         /* 滑過時再深一點 */
 }
 
 /* ---------- 摘要內容（收合區塊） ---------- */
-#abstract-content {
+.abstract-content {
   display: none;                     /* 預設隱藏 */
-  margin-top: 0.3em;
+  margin-top: 0.5em;
   padding-left: 1em;                 /* 內縮顯得結構分明 */
   color: inherit;                    /* 跟隨主題文字色 */
   font-family: "Open Sans", sans-serif;
