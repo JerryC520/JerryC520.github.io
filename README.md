@@ -7,5 +7,5 @@ stochastic finance, financial risk measures, financial econometrics, empirical a
 ### PROBABILITY & STATISTICS:
 probability theory and stochastic processes, mathematical statistics, econometric theory, modern machine learning
 ### Specialized Topics: 
-nonparametric and semiparametric statistics, functional time series, high-dimensional data, long-memory and nonstationary dependent data, high-frequency and mixed frequency data
+nonparametric and semiparametric statistics, functional time series, high-dimensional time series, long-memory and nonstationary dependent data, high-frequency and mixed frequency data
   
