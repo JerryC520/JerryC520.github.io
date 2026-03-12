@@ -1,5 +1,5 @@
 # Jerry C.
-### Ph.D. student in finance and statistics
+### Dual Ph.D. Candidate in Finance and Statistics
 
 ## RESEARCH INTERESTS: 
 ### FINANCE: 
