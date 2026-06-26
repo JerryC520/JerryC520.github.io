@@ -1,6 +1,6 @@
 # Jerry C.
 ### Dual Ph.D. Candidate in Finance and Statistics
-
+#
 # RESEARCH INTERESTS: 
 ### FINANCE: 
 stochastic finance, financial risk measures, behavioral finance, empirical asset pricing, financial econometrics
