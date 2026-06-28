@@ -3,7 +3,7 @@
 #
 ### RESEARCH INTERESTS: 
 ### Finance: 
-stochastic finance, financial risk measures, behavioral finance, empirical asset pricing, financial econometrics
+stochastic finance, financial risk measures, behavioral finance, asset pricing, financial econometrics
 ### Probability, Statistics & Econometrics:
 probability theory and stochastic processes, mathematical statistics, statistical learning, econometric theory
 #
