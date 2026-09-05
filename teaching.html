@@ -136,11 +136,18 @@
 
 
  <script>
-  if (localStorage.getItem('theme') === 'light') {
-    document.body.classList.remove('dark');
-  } else {
+  const savedTheme = localStorage.getItem('theme');
+  const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+  if (savedTheme === 'dark' || (savedTheme !== 'light' && systemDark.matches)) {
     document.body.classList.add('dark');
+  } else {
+    document.body.classList.remove('dark');
   }
+  systemDark.addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      document.body.classList.toggle('dark', e.matches);
+    }
+  });
   const toggleBtn = document.getElementById('theme-toggle');
   if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
