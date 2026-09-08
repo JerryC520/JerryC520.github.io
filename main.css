@@ -3706,3 +3706,13 @@ padding-top: 0;
   font-size: 0.9em;
   line-height: 1.7;
 }
+
+/* Sidebar menu: fixed darker link color (also keeps it readable in dark mode,
+   where the sidebar stays light) and larger Chinese labels */
+#menu ul a, #menu ul span {
+color: #3d4449;
+}
+
+#menu .lang-zh {
+font-size: 1.15em;
+}
