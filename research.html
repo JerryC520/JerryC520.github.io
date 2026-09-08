@@ -168,7 +168,8 @@
             <!-- Footer -->
             <footer id="footer">
                 <p class="copyright" style="color: #3b8bba;">
-                    &copy;2022 <a href="https://jerryc520.github.io/" style="color: #6ab0dd;">JerryC</a> <span class="lang-en">All rights reserved.</span><span class="lang-zh">版權所有。</span>
+                    &copy;2022 <a href="https://jerryc520.github.io/" style="color: #6ab0dd;">JerryC</a> <span class="lang-en">All rights reserved.</span><span class="lang-zh">版權所有。</span><br>
+                    <span class="lang-en">Last updated: </span><span class="lang-zh">最後更新時間：</span><span class="last-updated"></span>
                 </p>
             </footer>
 
@@ -240,6 +241,12 @@
       localStorage.setItem('lang', lang);
       applyLang(lang);
     });
+  });
+</script>
+
+<script>
+  document.querySelectorAll('.last-updated').forEach((el) => {
+    el.textContent = document.lastModified.split(' ')[0];
   });
 </script>
 
