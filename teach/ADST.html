@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 <head>
     <title> JerryC Teaching </title>
     <meta charset="utf-8" />
@@ -27,6 +27,12 @@
       }
 
      
+    
+      /* Language switcher (EN | 中文) */
+      body.zh .lang-en { display: none !important; }
+      body:not(.zh) .lang-zh { display: none !important; }
+      #lang-toggle a[data-setlang] { border-bottom: none; cursor: pointer; color: #3b8bba; }
+      #lang-toggle a.lang-active { font-weight: bold; text-decoration: underline; }
     </style>
 </head>
     <body class="is-preload">
@@ -43,21 +49,25 @@
                             style="color: #3b8bba;font-size: 16px;">
                             Life is a Supermartingale</a>
                        
-                        <h2> TEACHING </h2>            
+                        <h2><span class="lang-en">TEACHING</span><span class="lang-zh">教學</span></h2>            
                      <nav>
                <!--     Probability/Statistics/Econometrics/ML/Finance -->
-                </nav>    
+                </nav>
+                <ul class="icons">
+                    <li id="lang-toggle" style="font-size: 15px; white-space: nowrap;"><a data-setlang="en">EN</a><span style="color: #3b8bba;"> | </span><a data-setlang="zh">中文</a></li>
+                </ul>    
                     </header>
 
     <section id="banner">
     <div class="content">
       <header>               
-        <h3>  <li> Advanced Mathematical Statistics I & II, 2022-2023 </li> </h3> 
-          <p> Textbook: </p>
-          <p>    Casella and Berger (2002). Statistical Inference, 2nd ed. DUXBURY </p>
-          <p>    Jun Shao (2003). Mathematical Statistics, 2nd ed. SPRINGER VERLAG </p>
+        <h3>  <li> <span class="lang-en">Advanced Mathematical Statistics I & II, 2022-2023</span><span class="lang-zh">高等數理統計一、二，2022-2023</span> </li> </h3> 
+          <p> <span class="lang-en">Textbook:</span><span class="lang-zh">教科書：</span> </p>
+          <p>    1. Casella and Berger (2002). Statistical Inference, 2nd ed. DUXBURY </p>
+          <p>    2. Jun Shao (2003). Mathematical Statistics, 2nd ed. SPRINGER VERLAG </p>
           
         <ul> 
+           <span class="lang-en">Homework Solutions: </span><span class="lang-zh">作業解答： </span>
            HW1sol, HW2sol, HW3sol, HW4sol,
                 HW5sol, HW6sol, HW7sol, HW8sol, HW9sol, HW10sol, HW11sol
                
@@ -84,15 +94,15 @@
                 <!-- Menu -->
                 <nav id="menu">
                     <header class="major">
-                        <h2 style="color: #3b8bba;">MENU</h2>
+                        <h2 style="color: #3b8bba;"><span class="lang-en">MENU</span><span class="lang-zh">選單</span></h2>
                     </header>
                    <ul>
-                    <li><a href="https://jerryc520.github.io/">MAIN</a></li>
-                    <li><a href="https://jerryc520.github.io/about.html">CURRICULUM VITAE</a></li>
-                    <li><a href="https://jerryc520.github.io/research.html">RESEARCH</a></li>
-                    <li><a href="https://jerryc520.github.io/teaching.html">TEACHING</a></li>
-                    <li><a href="https://jerryc520.github.io/misc.html">MISCELLANEA</a></li>
-                    <li><a href="https://jerryc520.github.io/talk.html">TALK</a></li>
+                    <li><a href="https://jerryc520.github.io/"><span class="lang-en">MAIN</span><span class="lang-zh">首頁</span></a></li>
+                    <li><a href="https://jerryc520.github.io/about.html"><span class="lang-en">CURRICULUM VITAE</span><span class="lang-zh">個人履歷</span></a></li>
+                    <li><a href="https://jerryc520.github.io/research.html"><span class="lang-en">RESEARCH</span><span class="lang-zh">研究</span></a></li>
+                    <li><a href="https://jerryc520.github.io/teaching.html"><span class="lang-en">TEACHING</span><span class="lang-zh">教學</span></a></li>
+                    <li><a href="https://jerryc520.github.io/misc.html"><span class="lang-en">MISCELLANEA</span><span class="lang-zh">其他</span></a></li>
+                    <li><a href="https://jerryc520.github.io/talk.html"><span class="lang-en">TALK</span><span class="lang-zh">演講</span></a></li>
                 </ul>
                      </header>
                 </nav>
@@ -100,7 +110,7 @@
   <!-- Footer -->
                 <footer id="footer">
                     <p class="copyright">
-                        &copy2022 <a href="https://jerryc520.github.io/">JerryC</a>. All rights reserved.
+                        &copy;2022 <a href="https://jerryc520.github.io/">JerryC</a>. <span class="lang-en">All rights reserved.</span><span class="lang-zh">版權所有。</span>
                     
                     </p>
                 </footer>
@@ -142,5 +152,25 @@
   }
 </script>
         
+
+<script>
+  function applyLang(lang) {
+    document.body.classList.toggle('zh', lang === 'zh');
+    document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-Hant' : 'en');
+    document.querySelectorAll('[data-setlang]').forEach((el) => {
+      el.classList.toggle('lang-active', el.getAttribute('data-setlang') === lang);
+    });
+  }
+  applyLang(localStorage.getItem('lang') === 'zh' ? 'zh' : 'en');
+  document.querySelectorAll('[data-setlang]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const lang = el.getAttribute('data-setlang');
+      localStorage.setItem('lang', lang);
+      applyLang(lang);
+    });
+  });
+</script>
+
 </body>
 </html>

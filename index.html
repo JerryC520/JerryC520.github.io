@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <title> Jerry C </title>
  
@@ -42,6 +42,12 @@
     color: #ffffff;
   }
 
+    
+      /* Language switcher (EN | 中文) */
+      body.zh .lang-en { display: none !important; }
+      body:not(.zh) .lang-zh { display: none !important; }
+      #lang-toggle a[data-setlang] { border-bottom: none; cursor: pointer; color: #3b8bba; }
+      #lang-toggle a.lang-active { font-weight: bold; text-decoration: underline; }
     </style>
 
 </head>
@@ -91,6 +97,7 @@
                               
                           </a>
                         </li>
+                        <li id="lang-toggle" style="font-size: 15px; white-space: nowrap;"><a data-setlang="en">EN</a><span style="color: #3b8bba;"> | </span><a data-setlang="zh">中文</a></li>
                     </ul>
                 </header>
 
@@ -102,45 +109,38 @@
                             <h1 style="color: #3b8bba;"> JERRY SONGYEN CHEN  </h1>
                         </header>
                         <p>
-                            Hi, here is Jerry. Welcome to my website!
+                            <span class="lang-en">Hi, here is Jerry. Welcome to my website!</span><span class="lang-zh">嗨，我是 Jerry，歡迎來到我的網站！</span>
                       </p>
-I am a dual Ph.D. candidate in 
-                        <a href="https://management.ntu.edu.tw/Fin" class="logo"
-                        style="color: #3b8bba;">
-                        Finance </a> and 
-                        <a href="https://stat.nccu.edu.tw" class="logo"
-                        style="color: #3b8bba;">
-                        Statistics </a> at 
-                        <a href="https://www.ntu.edu.tw/english/" class="logo">
-                        National Taiwan University (NTU) </a>
-                        and 
-                        <a href="https://www.nccu.edu.tw/index.php?Lang=en" class="logo">
-                        National Chengchi University (NCCU) </a>, in Taiwan. 
-                         Before joining the doctoral program, I got my Master of Science in 
-                        <a href="https://ms.nccu.edu.tw" class="logo"
-                        style="color: #3b8bba;">
-                        Mathematics </a> 
-                        from NCCU and my Bachelor of Science in 
-                        <a href="https://econ.ntu.edu.tw/" class="logo"
-                        style="color: #3b8bba;">
-                        Economics </a>  from NTU.
-                        My domain of research interests encompasses various dimensions: 
-                        Probability Theory and Stochastic Processes, 
-                        Mathematical Statistics, 
-                        Econometric Theory, Financial Econometrics, 
-                        Asset Pricing, Behaviorial Finance,
-                        Continuous-time Models, 
-                        Financial Risk Measures, 
-                        Statistical Machine Learning and Financial Applications.
-                            <p>
-                        The specialized topics are focused on: 
-                        Nonparametric and Semiparametric Statistics, Dependent Data,
-                        Functional Time Series, 
-                        High-dimensional Dependent Data, High-frequency and Mixed-frequency Data.
-                      </p>
-                      </p>
+<div class="lang-en">
+<p>I am a dual Ph.D. candidate in
+<a href="https://management.ntu.edu.tw/Fin" class="logo" style="color: #3b8bba;">Finance</a> and
+<a href="https://stat.nccu.edu.tw" class="logo" style="color: #3b8bba;">Statistics</a> at
+<a href="https://www.ntu.edu.tw/english/" class="logo">National Taiwan University (NTU)</a> and
+<a href="https://www.nccu.edu.tw/index.php?Lang=en" class="logo">National Chengchi University (NCCU)</a>, in Taiwan.
+Before joining the doctoral program, I got my Master of Science in
+<a href="https://ms.nccu.edu.tw" class="logo" style="color: #3b8bba;">Mathematics</a> from NCCU and my Bachelor of Science in
+<a href="https://econ.ntu.edu.tw/" class="logo" style="color: #3b8bba;">Economics</a> from NTU.
+My domain of research interests encompasses various dimensions:
+Probability Theory and Stochastic Processes, Mathematical Statistics,
+Econometric Theory, Financial Econometrics, Asset Pricing, Behavioral Finance,
+Continuous-time Models, Financial Risk Measures,
+Statistical Machine Learning and Financial Applications.</p>
+<p>The specialized topics are focused on:
+Nonparametric and Semiparametric Statistics, Dependent Data,
+Functional Time Series, High-dimensional Dependent Data,
+High-frequency and Mixed-frequency Data.</p>
+</div>
+<div class="lang-zh">
+<p>我目前是
+<a href="https://www.ntu.edu.tw/" class="logo">國立臺灣大學（NTU）</a><a href="https://management.ntu.edu.tw/Fin" class="logo" style="color: #3b8bba;">財務金融學</a>與
+<a href="https://www.nccu.edu.tw/" class="logo">國立政治大學（NCCU）</a><a href="https://stat.nccu.edu.tw" class="logo" style="color: #3b8bba;">統計學</a>的雙博士候選人。
+進入博士班之前，我於國立政治大學取得<a href="https://ms.nccu.edu.tw" class="logo" style="color: #3b8bba;">數學</a>碩士學位，
+並於國立臺灣大學取得<a href="https://econ.ntu.edu.tw/" class="logo" style="color: #3b8bba;">經濟學</a>學士學位。
+我的研究興趣涵蓋多個面向：機率論與隨機過程、數理統計、計量經濟理論、財務計量經濟學、資產定價、行為財務學、連續時間模型、財務風險測度、統計機器學習與財務應用。</p>
+<p>專精主題聚焦於：無母數與半母數統計、相依資料、函數型時間序列、高維相依資料、高頻與混合頻率資料。</p>
+</div>
                        
-                       <p>✉️ Email: <i> xchen.ntu [at] gmail.com</i></p>
+                       <p>✉️ <span class="lang-en">Email:</span><span class="lang-zh">信箱：</span> <i> xchen.ntu [at] gmail.com</i></p>
                    <!--    <p>
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle; margin-bottom: 2px; margin-right: 5px;">
     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
@@ -167,22 +167,22 @@ I am a dual Ph.D. candidate in
             <!-- Menu -->
             <nav id="menu">
                 <header class="major">
-                    <h2 style="color: #3b8bba;">MENU</h2>
+                    <h2 style="color: #3b8bba;"><span class="lang-en">MENU</span><span class="lang-zh">選單</span></h2>
                 </header>
                 <ul>
-                    <li><a href="https://jerryc520.github.io/">MAIN</a></li>
-                    <li><a href="https://jerryc520.github.io/about.html">CURRICULUM VITAE</a></li>
-                    <li><a href="https://jerryc520.github.io/research.html">RESEARCH</a></li>
-                    <li><a href="https://jerryc520.github.io/teaching.html">TEACHING</a></li>
-                    <li><a href="https://jerryc520.github.io/misc.html"> MISCELLANEA</a></li>
-                    <li><a href="https://jerryc520.github.io/talk.html">TALK</a></li>
+                    <li><a href="https://jerryc520.github.io/"><span class="lang-en">MAIN</span><span class="lang-zh">首頁</span></a></li>
+                    <li><a href="https://jerryc520.github.io/about.html"><span class="lang-en">CURRICULUM VITAE</span><span class="lang-zh">個人履歷</span></a></li>
+                    <li><a href="https://jerryc520.github.io/research.html"><span class="lang-en">RESEARCH</span><span class="lang-zh">研究</span></a></li>
+                    <li><a href="https://jerryc520.github.io/teaching.html"><span class="lang-en">TEACHING</span><span class="lang-zh">教學</span></a></li>
+                    <li><a href="https://jerryc520.github.io/misc.html"><span class="lang-en">MISCELLANEA</span><span class="lang-zh">其他</span></a></li>
+                    <li><a href="https://jerryc520.github.io/talk.html"><span class="lang-en">TALK</span><span class="lang-zh">演講</span></a></li>
                 </ul>
             </nav>
 
             <!-- Footer -->
             <footer id="footer">
                 <p class="copyright">
-                    &copy;2022 <a href="https://jerryc520.github.io/">JerryC</a>. All rights reserved.
+                    &copy;2022 <a href="https://jerryc520.github.io/">JerryC</a>. <span class="lang-en">All rights reserved.</span><span class="lang-zh">版權所有。</span>
                 </p>
             </footer>
           
@@ -221,6 +221,26 @@ I am a dual Ph.D. candidate in
       }
     });
   }
+</script>
+
+
+<script>
+  function applyLang(lang) {
+    document.body.classList.toggle('zh', lang === 'zh');
+    document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-Hant' : 'en');
+    document.querySelectorAll('[data-setlang]').forEach((el) => {
+      el.classList.toggle('lang-active', el.getAttribute('data-setlang') === lang);
+    });
+  }
+  applyLang(localStorage.getItem('lang') === 'zh' ? 'zh' : 'en');
+  document.querySelectorAll('[data-setlang]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const lang = el.getAttribute('data-setlang');
+      localStorage.setItem('lang', lang);
+      applyLang(lang);
+    });
+  });
 </script>
 
 </body>

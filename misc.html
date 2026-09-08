@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 <head>
     <title>JerryC Miscellanea </title>
     <meta charset="utf-8" />
@@ -29,6 +29,12 @@
       }
 
    
+    
+      /* Language switcher (EN | 中文) */
+      body.zh .lang-en { display: none !important; }
+      body:not(.zh) .lang-zh { display: none !important; }
+      #lang-toggle a[data-setlang] { border-bottom: none; cursor: pointer; color: #3b8bba; }
+      #lang-toggle a.lang-active { font-weight: bold; text-decoration: underline; }
     </style>
 </head>
     <body class="is-preload">
@@ -47,47 +53,49 @@
                         </a>
                        
                       
-           <h2> MISCELLANEA </h2>            
+           <h2><span class="lang-en">MISCELLANEA</span><span class="lang-zh">其他</span></h2>            
         <nav>
-            Below are some materials for myself. If you have any of interest, 
-            please feel free to contact me.
+            <span class="lang-en">Below are some materials for myself. If you have any of interest, please feel free to contact me.</span><span class="lang-zh">以下是我為自己整理的一些資料，若對其中內容感興趣，歡迎與我聯絡。</span>
             <!---->
         </nav>
+                <ul class="icons">
+                    <li id="lang-toggle" style="font-size: 15px; white-space: nowrap;"><a data-setlang="en">EN</a><span style="color: #3b8bba;"> | </span><a data-setlang="zh">中文</a></li>
+                </ul>
       </header>
 
     <section id="banner">
     <div class="content">
       <header>               
-        <h2> Notes (study notes/lecture notes, prepared for myself) </h2>
+        <h2><span class="lang-en">Notes (study notes/lecture notes, prepared for myself)</span><span class="lang-zh">筆記（自用讀書筆記／上課講義）</span></h2>
         <ul>
-            <li><a href="https://drive.google.com/file/d/1VoKfaOAPSdJF38AzmUdkfLncQDR1zFYs/view?usp=sharing"  style="color: #3b8bba;"> Harmless Domain Knowledge for Econometrics: a Quick Review (2022) </a></li>
-            <li><a href="https://drive.google.com/file/d/101Tvt_TKmJxzbisER8_w_MuCHcNMmnhx/view?usp=sharing"  style="color: #3b8bba;"> Endogeneity and Causality: a Review (2020) </a></li>
-             <li><a href="https://drive.google.com/file/d/1kS-84GTpEfvzzbg0snCPrSXyT0Vj7w7x/view?usp=share_link"  style="color: #3b8bba;"> Note on Fourier Analysis (2019) </a></li>
-            <li><a href="link-to-your-lec-5"  style="color: #3b8bba;"> Basic Tools for High-dimensional Probability and Statistics (2021) </a></li>
-             <li><a href="link-to-your-lec-3"  style="color: #3b8bba;"> Introductory Stochastic Analysis (2020) </a></li>
-            <li><a href="link-to-your-lec-6"  style="color: #3b8bba;"> Essentials of Empirical Processes (2021) </a></li> 
-            <li><a href="link-to-your-lec-7"  style="color: #3b8bba;"> Note on Measure-theoretic Probability Theory (2019) </a></li>
-            <li><a href="link-to-your-lec-8"  style="color: #3b8bba;"> Note on Real Analysis and Functional Analysis (2019) </a></li>
-            <li><a href="link-to-your-lec-9"  style="color: #3b8bba;"> Solution Manuals for Principles of Mathematical Analysis (baby Rudin) (2018) </a></li>
+            <li><a href="https://drive.google.com/file/d/1VoKfaOAPSdJF38AzmUdkfLncQDR1zFYs/view?usp=sharing"  style="color: #3b8bba;"> <span class="lang-en">Harmless Domain Knowledge for Econometrics: a Quick Review (2022)</span><span class="lang-zh">計量經濟學的無害領域知識：快速回顧（2022）</span> </a></li>
+            <li><a href="https://drive.google.com/file/d/101Tvt_TKmJxzbisER8_w_MuCHcNMmnhx/view?usp=sharing"  style="color: #3b8bba;"> <span class="lang-en">Endogeneity and Causality: a Review (2020)</span><span class="lang-zh">內生性與因果推論：回顧（2020）</span> </a></li>
+             <li><a href="https://drive.google.com/file/d/1kS-84GTpEfvzzbg0snCPrSXyT0Vj7w7x/view?usp=share_link"  style="color: #3b8bba;"> <span class="lang-en">Note on Fourier Analysis (2019)</span><span class="lang-zh">傅立葉分析筆記（2019）</span> </a></li>
+            <li><a href="link-to-your-lec-5"  style="color: #3b8bba;"> <span class="lang-en">Basic Tools for High-dimensional Probability and Statistics (2021)</span><span class="lang-zh">高維機率與統計的基本工具（2021）</span> </a></li>
+             <li><a href="link-to-your-lec-3"  style="color: #3b8bba;"> <span class="lang-en">Introductory Stochastic Analysis (2020)</span><span class="lang-zh">隨機分析導論（2020）</span> </a></li>
+            <li><a href="link-to-your-lec-6"  style="color: #3b8bba;"> <span class="lang-en">Essentials of Empirical Processes (2021)</span><span class="lang-zh">經驗過程精要（2021）</span> </a></li> 
+            <li><a href="link-to-your-lec-7"  style="color: #3b8bba;"> <span class="lang-en">Note on Measure-theoretic Probability Theory (2019)</span><span class="lang-zh">測度論機率筆記（2019）</span> </a></li>
+            <li><a href="link-to-your-lec-8"  style="color: #3b8bba;"> <span class="lang-en">Note on Real Analysis and Functional Analysis (2019)</span><span class="lang-zh">實分析與泛函分析筆記（2019）</span> </a></li>
+            <li><a href="link-to-your-lec-9"  style="color: #3b8bba;"> <span class="lang-en">Solution Manuals for Principles of Mathematical Analysis (baby Rudin) (2018)</span><span class="lang-zh">《數學分析原理》（baby Rudin）解答手冊（2018）</span> </a></li>
         </ul>
           </header>
           <header> 
-          <h2> Others (short notes) </h2>
+          <h2><span class="lang-en">Others (short notes)</span><span class="lang-zh">其他（短篇筆記）</span></h2>
         <ul>
-            <li><a href="link-to-your-note-1"  style="color: #3b8bba;"> Note on Self-avoiding Walks and Percolation  </a></li>
-            <li><a href="link-to-your-note-2"  style="color: #3b8bba;"> Note on Branching Processes </a></li>
-            <li><a href="link-to-your-note-3"  style="color: #3b8bba;"> Note on Levy Processes </a></li>
-            <li><a href="link-to-your-note-4"  style="color: #3b8bba;"> Note on Local Projection and Impose Responses </a></li> 
-            <li><a href="link-to-your-note-5"  style="color: #3b8bba;"> Note on Long-range Dependence and Self-similar Processes </a></li>
-            <li><a href="link-to-your-note-6"  style="color: #3b8bba;"> Note on Asymptotic Expansions </a></li>  
-            <li><a href="link-to-your-note-7"  style="color: #3b8bba;"> Note on Large Deviations </a></li>
-            <li><a href="link-to-your-note-8"  style="color: #3b8bba;"> Note on Self-normalization and Fixed-smoothing Asymptotics </a></li>
-            <li><a href="link-to-your-note-9"  style="color: #3b8bba;"> Note on Copulas </a></li> 
-            <li><a href="link-to-your-note-10" style="color: #3b8bba;"> Note on Empirical Bayes Methods </a></li> 
-            <li><a href="link-to-your-note-11" style="color: #3b8bba;"> Note on Treatment Effects Models </a></li> 
-            <li><a href="link-to-your-note-12" style="color: #3b8bba;"> Note on Nonparametric and Semiparametric Regressions </a></li> 
-            <li><a href="link-to-your-note-13" style="color: #3b8bba;"> Note on Model Selection and Model Averaging </a></li>
-            <li><a href="link-to-your-note-14" style="color: #3b8bba;"> Note on Generalized Principal Component Analysis </a></li> 
+            <li><a href="link-to-your-note-1"  style="color: #3b8bba;"> <span class="lang-en">Note on Self-avoiding Walks and Percolation</span><span class="lang-zh">自迴避隨機漫步與滲流筆記</span> </a></li>
+            <li><a href="link-to-your-note-2"  style="color: #3b8bba;"> <span class="lang-en">Note on Branching Processes</span><span class="lang-zh">分支過程筆記</span> </a></li>
+            <li><a href="link-to-your-note-3"  style="color: #3b8bba;"> <span class="lang-en">Note on Levy Processes</span><span class="lang-zh">Lévy 過程筆記</span> </a></li>
+            <li><a href="link-to-your-note-4"  style="color: #3b8bba;"> <span class="lang-en">Note on Local Projection and Impulse Responses</span><span class="lang-zh">局部投影與衝擊反應筆記</span> </a></li> 
+            <li><a href="link-to-your-note-5"  style="color: #3b8bba;"> <span class="lang-en">Note on Long-range Dependence and Self-similar Processes</span><span class="lang-zh">長程相依與自相似過程筆記</span> </a></li>
+            <li><a href="link-to-your-note-6"  style="color: #3b8bba;"> <span class="lang-en">Note on Asymptotic Expansions</span><span class="lang-zh">漸近展開筆記</span> </a></li>  
+            <li><a href="link-to-your-note-7"  style="color: #3b8bba;"> <span class="lang-en">Note on Large Deviations</span><span class="lang-zh">大偏差理論筆記</span> </a></li>
+            <li><a href="link-to-your-note-8"  style="color: #3b8bba;"> <span class="lang-en">Note on Self-normalization and Fixed-smoothing Asymptotics</span><span class="lang-zh">自正規化與固定平滑漸近理論筆記</span> </a></li>
+            <li><a href="link-to-your-note-9"  style="color: #3b8bba;"> <span class="lang-en">Note on Copulas</span><span class="lang-zh">Copula 筆記</span> </a></li> 
+            <li><a href="link-to-your-note-10" style="color: #3b8bba;"> <span class="lang-en">Note on Empirical Bayes Methods</span><span class="lang-zh">經驗貝氏方法筆記</span> </a></li> 
+            <li><a href="link-to-your-note-11" style="color: #3b8bba;"> <span class="lang-en">Note on Treatment Effects Models</span><span class="lang-zh">處理效果模型筆記</span> </a></li> 
+            <li><a href="link-to-your-note-12" style="color: #3b8bba;"> <span class="lang-en">Note on Nonparametric and Semiparametric Regressions</span><span class="lang-zh">無母數與半母數迴歸筆記</span> </a></li> 
+            <li><a href="link-to-your-note-13" style="color: #3b8bba;"> <span class="lang-en">Note on Model Selection and Model Averaging</span><span class="lang-zh">模型選擇與模型平均筆記</span> </a></li>
+            <li><a href="link-to-your-note-14" style="color: #3b8bba;"> <span class="lang-en">Note on Generalized Principal Component Analysis</span><span class="lang-zh">廣義主成分分析筆記</span> </a></li> 
         </ul>
  </header>
                     
@@ -107,15 +115,15 @@
                 <!-- Menu -->
                 <nav id="menu">
                     <header class="major">
-                        <h2 style="color: #3b8bba;">MENU</h2>
+                        <h2 style="color: #3b8bba;"><span class="lang-en">MENU</span><span class="lang-zh">選單</span></h2>
                     </header>
                     <ul>
-                        <li><a href="https://jerryc520.github.io/">MAIN</a></li>
-                   <li><a href="https://jerryc520.github.io/about.html">CURRICULUM VITAE</a></li>
-                       <li><a href="https://jerryc520.github.io/research.html">RESEARCH</a></li>
-                     <li><a href="https://jerryc520.github.io/teaching.html">TEACHING</a></li>
-                        <li><a href="https://jerryc520.github.io/misc.html"> MISCELLANEA</a></li>
-                        <li><a href="https://jerryc520.github.io/talk.html">TALK</a></li>
+                        <li><a href="https://jerryc520.github.io/"><span class="lang-en">MAIN</span><span class="lang-zh">首頁</span></a></li>
+                   <li><a href="https://jerryc520.github.io/about.html"><span class="lang-en">CURRICULUM VITAE</span><span class="lang-zh">個人履歷</span></a></li>
+                       <li><a href="https://jerryc520.github.io/research.html"><span class="lang-en">RESEARCH</span><span class="lang-zh">研究</span></a></li>
+                     <li><a href="https://jerryc520.github.io/teaching.html"><span class="lang-en">TEACHING</span><span class="lang-zh">教學</span></a></li>
+                        <li><a href="https://jerryc520.github.io/misc.html"><span class="lang-en">MISCELLANEA</span><span class="lang-zh">其他</span></a></li>
+                        <li><a href="https://jerryc520.github.io/talk.html"><span class="lang-en">TALK</span><span class="lang-zh">演講</span></a></li>
                     </ul>
                      </header>
                 </nav>
@@ -124,7 +132,7 @@
   <!-- Footer -->
                 <footer id="footer">
                     <p class="copyright">
-                        &copy2022 <a href="https://jerryc520.github.io/">JerryC</a>. All rights reserved.
+                        &copy;2022 <a href="https://jerryc520.github.io/">JerryC</a>. <span class="lang-en">All rights reserved.</span><span class="lang-zh">版權所有。</span>
                     
                     </p>
                 </footer>
@@ -167,5 +175,25 @@
   }
 </script>
         
+
+<script>
+  function applyLang(lang) {
+    document.body.classList.toggle('zh', lang === 'zh');
+    document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-Hant' : 'en');
+    document.querySelectorAll('[data-setlang]').forEach((el) => {
+      el.classList.toggle('lang-active', el.getAttribute('data-setlang') === lang);
+    });
+  }
+  applyLang(localStorage.getItem('lang') === 'zh' ? 'zh' : 'en');
+  document.querySelectorAll('[data-setlang]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const lang = el.getAttribute('data-setlang');
+      localStorage.setItem('lang', lang);
+      applyLang(lang);
+    });
+  });
+</script>
+
 </body>
 </html>
